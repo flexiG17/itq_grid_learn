@@ -1,0 +1,107 @@
+.product {
+  display: flex;
+  gap: 30px;
+  padding-top: 90px;
+}
+
+.leftBlock {
+  display: flex;
+  flex-direction: column;
+  margin: 115px 0;
+  gap: 30px;
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 40px;
+      color: #666666;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 31px;
+      color: #85859B;
+    }
+  }
+
+  button {
+    width: 255px;
+    height: 70px;
+    border: 1px solid #7875FE;
+    background: transparent;
+    cursor: pointer;
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #7875FE;
+    }
+  }
+}
+
+.rightBlock {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .rightBlock {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  .rightBlock {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rightBlock {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .rightBlock {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding: 60px 0;
+  }
+
+  .leftBlock {
+    margin: 0;
+  }
+
+  .rightBlock {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .product {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .rightBlock {
+    width: 450px;
+    height: 342px;
+  }
+}

@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  gap: 60px;
+
+  &_link {
+    color: #4C5866;
+    transition: 0.2s;
+  }
+
+  &_actions {
+    display: flex;
+    gap: 30px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+}

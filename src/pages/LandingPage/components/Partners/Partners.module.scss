@@ -1,0 +1,28 @@
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 90px 0;
+}
+
+.card {
+  width: 100%;
+  height: 135px;
+  border: 1px solid #C4C4C4;
+}
+
+@media (max-width: 1300px) {
+  .partners {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 80px;
+  }
+
+  .partners {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
